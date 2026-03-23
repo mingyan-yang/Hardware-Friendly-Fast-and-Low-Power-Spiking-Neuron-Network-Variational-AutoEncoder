@@ -1,0 +1,177 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : top
+Version: R-2020.09-SP5
+Date   : Wed Nov 19 18:15:51 2025
+****************************************
+
+
+Library(s) Used:
+
+    slow_vdd1v2 (File: /usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db)
+
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    Large             slow_vdd1v2
+spike_adder_controller Small             slow_vdd1v2
+LIF                    Small             slow_vdd1v2
+FSM                    Small             slow_vdd1v2
+bottleneck             Small             slow_vdd1v2
+_56to1_adder           Small             slow_vdd1v2
+SNPS_CLOCK_GATE_HIGH_bottleneck
+                       Small             slow_vdd1v2
+_7to1_adder_mydesign_7 Small             slow_vdd1v2
+_7to1_adder_mydesign_6 Small             slow_vdd1v2
+_7to1_adder_mydesign_5 Small             slow_vdd1v2
+_7to1_adder_mydesign_4 Small             slow_vdd1v2
+_7to1_adder_mydesign_3 Small             slow_vdd1v2
+_7to1_adder_mydesign_2 Small             slow_vdd1v2
+_7to1_adder_mydesign_1 Small             slow_vdd1v2
+_7to1_adder_mydesign_0 Small             slow_vdd1v2
+_2to1_adder_1st_mydesign_3
+                       Small             slow_vdd1v2
+_2to1_adder_1st_mydesign_2
+                       Small             slow_vdd1v2
+_2to1_adder_1st_mydesign_1
+                       Small             slow_vdd1v2
+_2to1_adder_1st_mydesign_0
+                       Small             slow_vdd1v2
+_2to1_adder_2nd_mydesign_1
+                       Small             slow_vdd1v2
+_2to1_adder_2nd_mydesign_0
+                       Small             slow_vdd1v2
+_2to1_adder_3rd        Small             slow_vdd1v2
+csa_W8_mydesign_15     Small             slow_vdd1v2
+csa_W8_mydesign_14     Small             slow_vdd1v2
+csa_W9_mydesign_7      Small             slow_vdd1v2
+csa_W10_mydesign_7     Small             slow_vdd1v2
+csa_W11_mydesign_7     Small             slow_vdd1v2
+csa_W8_mydesign_13     Small             slow_vdd1v2
+csa_W8_mydesign_12     Small             slow_vdd1v2
+csa_W9_mydesign_6      Small             slow_vdd1v2
+csa_W10_mydesign_6     Small             slow_vdd1v2
+csa_W11_mydesign_6     Small             slow_vdd1v2
+csa_W8_mydesign_11     Small             slow_vdd1v2
+csa_W8_mydesign_10     Small             slow_vdd1v2
+csa_W9_mydesign_5      Small             slow_vdd1v2
+csa_W10_mydesign_5     Small             slow_vdd1v2
+csa_W11_mydesign_5     Small             slow_vdd1v2
+csa_W8_mydesign_9      Small             slow_vdd1v2
+csa_W8_mydesign_8      Small             slow_vdd1v2
+csa_W9_mydesign_4      Small             slow_vdd1v2
+csa_W10_mydesign_4     Small             slow_vdd1v2
+csa_W11_mydesign_4     Small             slow_vdd1v2
+csa_W8_mydesign_7      Small             slow_vdd1v2
+csa_W8_mydesign_6      Small             slow_vdd1v2
+csa_W9_mydesign_3      Small             slow_vdd1v2
+csa_W10_mydesign_3     Small             slow_vdd1v2
+csa_W11_mydesign_3     Small             slow_vdd1v2
+csa_W8_mydesign_5      Small             slow_vdd1v2
+csa_W8_mydesign_4      Small             slow_vdd1v2
+csa_W9_mydesign_2      Small             slow_vdd1v2
+csa_W10_mydesign_2     Small             slow_vdd1v2
+csa_W11_mydesign_2     Small             slow_vdd1v2
+csa_W8_mydesign_3      Small             slow_vdd1v2
+csa_W8_mydesign_2      Small             slow_vdd1v2
+csa_W9_mydesign_1      Small             slow_vdd1v2
+csa_W10_mydesign_1     Small             slow_vdd1v2
+csa_W11_mydesign_1     Small             slow_vdd1v2
+csa_W8_mydesign_1      Small             slow_vdd1v2
+csa_W8_mydesign_0      Small             slow_vdd1v2
+csa_W9_mydesign_0      Small             slow_vdd1v2
+csa_W10_mydesign_0     Small             slow_vdd1v2
+csa_W11_mydesign_0     Small             slow_vdd1v2
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+top                                     400.274   14.061 5.38e+06  414.340 100.0
+  B1 (bottleneck)                      4.94e-04 3.00e-02 1.13e+04 3.05e-02   0.0
+  F1 (FSM)                             1.92e-04 3.99e-03 1.53e+03 4.18e-03   0.0
+  L1 (LIF)                             1.52e-03 2.92e-02 1.67e+04 3.07e-02   0.0
+  C0 (spike_adder_controller)          2.88e-02    0.353 1.24e+05    0.382   0.1
+    ADDER (_56to1_adder)               2.74e-02    0.315 1.14e+05    0.342   0.1
+      A2_3 (_2to1_adder_3rd)           1.12e-03 2.29e-02 4.06e+03 2.40e-02   0.0
+      A2_2_2 (_2to1_adder_2nd_mydesign_0)
+                                       9.75e-04 2.07e-02 3.68e+03 2.17e-02   0.0
+      A2_2_1 (_2to1_adder_2nd_mydesign_1)
+                                       9.69e-04 2.07e-02 3.68e+03 2.17e-02   0.0
+      A2_1_4 (_2to1_adder_1st_mydesign_0)
+                                       7.42e-04 1.80e-02 3.29e+03 1.88e-02   0.0
+      A2_1_3 (_2to1_adder_1st_mydesign_1)
+                                       7.48e-04 1.81e-02 3.29e+03 1.88e-02   0.0
+      A2_1_2 (_2to1_adder_1st_mydesign_2)
+                                       7.47e-04 1.81e-02 3.29e+03 1.88e-02   0.0
+      A2_1_1 (_2to1_adder_1st_mydesign_3)
+                                       7.45e-04 1.81e-02 3.29e+03 1.88e-02   0.0
+      A7_8 (_7to1_adder_mydesign_0)    2.69e-03 2.17e-02 1.12e+04 2.44e-02   0.0
+        CSA5 (csa_W11_mydesign_0)      3.32e-04 1.37e-03 1.58e+03 1.71e-03   0.0
+        CSA4 (csa_W10_mydesign_0)      5.22e-04 1.49e-03 1.58e+03 2.01e-03   0.0
+        CSA3 (csa_W9_mydesign_0)       4.42e-04 1.22e-03 1.42e+03 1.66e-03   0.0
+        CSA2 (csa_W8_mydesign_0)       1.64e-04 6.30e-04 1.42e+03 7.96e-04   0.0
+        CSA1 (csa_W8_mydesign_1)       2.28e-04 6.45e-04 1.42e+03 8.75e-04   0.0
+      A7_7 (_7to1_adder_mydesign_1)    2.63e-03 2.15e-02 1.11e+04 2.42e-02   0.0
+        CSA5 (csa_W11_mydesign_1)      3.27e-04 1.34e-03 1.58e+03 1.67e-03   0.0
+        CSA4 (csa_W10_mydesign_1)      5.02e-04 1.43e-03 1.58e+03 1.93e-03   0.0
+        CSA3 (csa_W9_mydesign_1)       4.32e-04 1.19e-03 1.42e+03 1.62e-03   0.0
+        CSA2 (csa_W8_mydesign_2)       1.59e-04 6.09e-04 1.42e+03 7.69e-04   0.0
+        CSA1 (csa_W8_mydesign_3)       2.27e-04 6.41e-04 1.42e+03 8.70e-04   0.0
+      A7_6 (_7to1_adder_mydesign_2)    2.72e-03 2.19e-02 1.12e+04 2.46e-02   0.0
+        CSA5 (csa_W11_mydesign_2)      3.37e-04 1.39e-03 1.58e+03 1.73e-03   0.0
+        CSA4 (csa_W10_mydesign_2)      5.28e-04 1.50e-03 1.58e+03 2.03e-03   0.0
+        CSA3 (csa_W9_mydesign_2)       4.44e-04 1.22e-03 1.42e+03 1.67e-03   0.0
+        CSA2 (csa_W8_mydesign_4)       1.65e-04 6.28e-04 1.42e+03 7.94e-04   0.0
+        CSA1 (csa_W8_mydesign_5)       2.37e-04 6.67e-04 1.42e+03 9.05e-04   0.0
+      A7_5 (_7to1_adder_mydesign_3)    2.66e-03 2.17e-02 1.12e+04 2.43e-02   0.0
+        CSA5 (csa_W11_mydesign_3)      3.32e-04 1.37e-03 1.58e+03 1.70e-03   0.0
+        CSA4 (csa_W10_mydesign_3)      5.14e-04 1.46e-03 1.58e+03 1.98e-03   0.0
+        CSA3 (csa_W9_mydesign_3)       4.35e-04 1.20e-03 1.42e+03 1.63e-03   0.0
+        CSA2 (csa_W8_mydesign_6)       1.60e-04 6.13e-04 1.42e+03 7.74e-04   0.0
+        CSA1 (csa_W8_mydesign_7)       2.25e-04 6.37e-04 1.42e+03 8.63e-04   0.0
+      A7_4 (_7to1_adder_mydesign_4)    2.62e-03 2.15e-02 1.12e+04 2.41e-02   0.0
+        CSA5 (csa_W11_mydesign_4)      3.22e-04 1.34e-03 1.58e+03 1.66e-03   0.0
+        CSA4 (csa_W10_mydesign_4)      5.08e-04 1.45e-03 1.58e+03 1.96e-03   0.0
+        CSA3 (csa_W9_mydesign_4)       4.24e-04 1.16e-03 1.42e+03 1.59e-03   0.0
+        CSA2 (csa_W8_mydesign_8)       1.55e-04 5.94e-04 1.42e+03 7.50e-04   0.0
+        CSA1 (csa_W8_mydesign_9)       2.30e-04 6.49e-04 1.42e+03 8.81e-04   0.0
+      A7_3 (_7to1_adder_mydesign_5)    2.63e-03 2.16e-02 1.12e+04 2.42e-02   0.0
+        CSA5 (csa_W11_mydesign_5)      3.24e-04 1.35e-03 1.58e+03 1.67e-03   0.0
+        CSA4 (csa_W10_mydesign_5)      5.11e-04 1.45e-03 1.58e+03 1.97e-03   0.0
+        CSA3 (csa_W9_mydesign_5)       4.30e-04 1.18e-03 1.42e+03 1.62e-03   0.0
+        CSA2 (csa_W8_mydesign_10)      1.64e-04 6.27e-04 1.42e+03 7.92e-04   0.0
+        CSA1 (csa_W8_mydesign_11)      2.19e-04 6.20e-04 1.42e+03 8.40e-04   0.0
+      A7_2 (_7to1_adder_mydesign_6)    2.65e-03 2.16e-02 1.11e+04 2.43e-02   0.0
+        CSA5 (csa_W11_mydesign_6)      3.27e-04 1.35e-03 1.58e+03 1.68e-03   0.0
+        CSA4 (csa_W10_mydesign_6)      5.11e-04 1.46e-03 1.58e+03 1.97e-03   0.0
+        CSA3 (csa_W9_mydesign_6)       4.33e-04 1.19e-03 1.42e+03 1.63e-03   0.0
+        CSA2 (csa_W8_mydesign_12)      1.61e-04 6.17e-04 1.42e+03 7.79e-04   0.0
+        CSA1 (csa_W8_mydesign_13)      2.24e-04 6.34e-04 1.42e+03 8.59e-04   0.0
+      A7_1 (_7to1_adder_mydesign_7)    2.68e-03 2.17e-02 1.11e+04 2.44e-02   0.0
+        CSA5 (csa_W11_mydesign_7)      3.31e-04 1.37e-03 1.58e+03 1.70e-03   0.0
+        CSA4 (csa_W10_mydesign_7)      5.15e-04 1.47e-03 1.58e+03 1.98e-03   0.0
+        CSA3 (csa_W9_mydesign_7)       4.39e-04 1.21e-03 1.42e+03 1.65e-03   0.0
+        CSA2 (csa_W8_mydesign_14)      1.63e-04 6.26e-04 1.42e+03 7.91e-04   0.0
+        CSA1 (csa_W8_mydesign_15)      2.30e-04 6.50e-04 1.42e+03 8.81e-04   0.0
+1

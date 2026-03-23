@@ -1,0 +1,65 @@
+Warning: Design 'top' has '6' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: R-2020.09-SP5
+Date   : Wed Nov 19 18:15:43 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: enclosed
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: B1/clk_gate_counter_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Large                 slow_vdd1v2
+  bottleneck         Small                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  1.2500     1.2500 f
+  rst (in)                                              0.0102     1.2602 f
+  U37545/Y (BUFX2)                                      0.0997     1.3599 f
+  B1/reset (bottleneck)                                 0.0000     1.3599 f
+  B1/U28/Y (INVX1)                                      0.0953     1.4552 r
+  B1/U26/Y (NAND2XL)                                    0.0641     1.5193 f
+  B1/clk_gate_counter_reg/EN (SNPS_CLOCK_GATE_HIGH_bottleneck)
+                                                        0.0000     1.5193 f
+  B1/clk_gate_counter_reg/latch/D (TLATNXL)             0.0096     1.5289 f
+  data arrival time                                                1.5289
+
+  clock clk (fall edge)                                 1.2500     1.2500
+  clock network delay (ideal)                           0.0000     1.2500
+  B1/clk_gate_counter_reg/latch/GN (TLATNXL)            0.0000     1.2500 f
+  time borrowed from endpoint                           0.2789     1.5289
+  data required time                                               1.5289
+  --------------------------------------------------------------------------
+  data required time                                               1.5289
+  data arrival time                                               -1.5289
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                               1.2500   
+  library setup time                                   -0.0410   
+  --------------------------------------------------------------
+  max time borrow                                       1.2090   
+  actual time borrow                                    0.2789   
+  --------------------------------------------------------------
+
+
+1

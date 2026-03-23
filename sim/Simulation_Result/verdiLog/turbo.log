@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2022.06/platform/LINUXAMD64/bin/Novas -f ../sim_rtl.f -ssf test.fsdb
+uname(Linux ws43 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64)
+au time 68.220345 5.559027 1.327611 delta 274231296 274231296 total 801673216 801673216

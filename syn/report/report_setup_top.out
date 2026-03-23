@@ -1,0 +1,236 @@
+Warning: Design 'top' has '6' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 4
+Design : top
+Version: R-2020.09-SP5
+Date   : Wed Nov 19 18:15:43 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: enclosed
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: B1/clk_gate_counter_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Large                 slow_vdd1v2
+  bottleneck         Small                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.25       1.25 f
+  rst (in)                                                0.01       1.26 f
+  U37545/Y (BUFX2)                                        0.10       1.36 f
+  B1/reset (bottleneck)                                   0.00       1.36 f
+  B1/U28/Y (INVX1)                                        0.10       1.46 r
+  B1/U26/Y (NAND2XL)                                      0.06       1.52 f
+  B1/clk_gate_counter_reg/EN (SNPS_CLOCK_GATE_HIGH_bottleneck)
+                                                          0.00       1.52 f
+  B1/clk_gate_counter_reg/latch/D (TLATNXL)               0.01       1.53 f
+  data arrival time                                                  1.53
+
+  clock clk (fall edge)                                   1.25       1.25
+  clock network delay (ideal)                             0.00       1.25
+  B1/clk_gate_counter_reg/latch/GN (TLATNXL)              0.00       1.25 f
+  time borrowed from endpoint                             0.28       1.53
+  data required time                                                 1.53
+  --------------------------------------------------------------------------
+  data required time                                                 1.53
+  data arrival time                                                 -1.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 1.25   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         1.21   
+  actual time borrow                                      0.28   
+  --------------------------------------------------------------
+
+
+  Startpoint: addr_LIF_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: potential_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Large                 slow_vdd1v2
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_LIF_reg_3_/CK (DFFTRX1)             0.00 #     0.00 r
+  addr_LIF_reg_3_/Q (DFFTRX1)              0.11       0.11 r
+  U37797/Y (INVXL)                         0.05       0.16 f
+  U58562/Y (NAND2XL)                       0.05       0.21 r
+  U64702/Y (OAI211XL)                      0.09       0.30 f
+  U50828/Y (NOR4BX1)                       0.10       0.39 f
+  U64704/Y (NOR2XL)                        0.06       0.45 r
+  U10837/Y (NOR2BX1)                       0.09       0.54 r
+  U52067/Y (NAND2XL)                       0.08       0.62 f
+  U50167/CO (ADDFXL)                       0.17       0.79 f
+  U50166/CO (ADDFXL)                       0.15       0.95 f
+  U51234/Y (NOR2XL)                        0.06       1.01 r
+  U38876/Y (NAND2XL)                       0.10       1.10 f
+  U52068/Y (NAND2XL)                       0.07       1.18 r
+  U52075/Y (NOR2BXL)                       0.05       1.23 f
+  U52076/Y (NAND2XL)                       0.05       1.28 r
+  U37549/Y (INVXL)                         0.06       1.34 f
+  U38232/Y (INVXL)                         0.09       1.43 r
+  U37677/Y (NOR2XL)                        0.11       1.54 f
+  U55204/Y (AOI22XL)                       0.10       1.64 r
+  U55207/Y (NAND4XL)                       0.13       1.77 f
+  U55213/Y (NOR4XL)                        0.12       1.89 r
+  U55235/Y (NAND4XL)                       0.15       2.04 f
+  U55236/Y (OR2XL)                         0.10       2.14 f
+  U55315/Y (NAND3BXL)                      0.10       2.24 f
+  U50989/Y (OAI31XL)                       0.10       2.34 r
+  U50988/Y (NAND2XL)                       0.08       2.42 f
+  potential_reg_7_/RN (DFFTRXL)            0.03       2.45 f
+  data arrival time                                   2.45
+
+  clock clk (rise edge)                    2.50       2.50
+  clock network delay (ideal)              0.00       2.50
+  potential_reg_7_/CK (DFFTRXL)            0.00       2.50 r
+  library setup time                      -0.05       2.45
+  data required time                                  2.45
+  -----------------------------------------------------------
+  data required time                                  2.45
+  data arrival time                                  -2.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: addr_LIF_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: potential_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Large                 slow_vdd1v2
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_LIF_reg_3_/CK (DFFTRX1)             0.00 #     0.00 r
+  addr_LIF_reg_3_/Q (DFFTRX1)              0.11       0.11 r
+  U37797/Y (INVXL)                         0.05       0.16 f
+  U58562/Y (NAND2XL)                       0.05       0.21 r
+  U64702/Y (OAI211XL)                      0.09       0.30 f
+  U50828/Y (NOR4BX1)                       0.10       0.39 f
+  U64704/Y (NOR2XL)                        0.06       0.45 r
+  U10837/Y (NOR2BX1)                       0.09       0.54 r
+  U52067/Y (NAND2XL)                       0.08       0.62 f
+  U50167/CO (ADDFXL)                       0.17       0.79 f
+  U50166/CO (ADDFXL)                       0.15       0.95 f
+  U51234/Y (NOR2XL)                        0.06       1.01 r
+  U38876/Y (NAND2XL)                       0.10       1.10 f
+  U52068/Y (NAND2XL)                       0.07       1.18 r
+  U52075/Y (NOR2BXL)                       0.05       1.23 f
+  U52076/Y (NAND2XL)                       0.05       1.28 r
+  U37549/Y (INVXL)                         0.06       1.34 f
+  U38232/Y (INVXL)                         0.09       1.43 r
+  U52623/Y (NOR2XL)                        0.11       1.54 f
+  U57383/Y (AOI22XL)                       0.09       1.63 r
+  U57387/Y (NAND4XL)                       0.14       1.77 f
+  U57398/Y (OR4X1)                         0.21       1.98 f
+  U37401/Y (NOR4BX1)                       0.13       2.11 r
+  U57447/Y (NAND2XL)                       0.08       2.19 f
+  U57604/Y (NOR2XL)                        0.06       2.25 r
+  U57605/Y (NAND3XL)                       0.08       2.34 f
+  U57708/Y (OAI2BB1XL)                     0.09       2.42 f
+  potential_reg_1_/RN (DFFTRXL)            0.03       2.45 f
+  data arrival time                                   2.45
+
+  clock clk (rise edge)                    2.50       2.50
+  clock network delay (ideal)              0.00       2.50
+  potential_reg_1_/CK (DFFTRXL)            0.00       2.50 r
+  library setup time                      -0.05       2.45
+  data required time                                  2.45
+  -----------------------------------------------------------
+  data required time                                  2.45
+  data arrival time                                  -2.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: addr_LIF_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: potential_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Large                 slow_vdd1v2
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_LIF_reg_3_/CK (DFFTRX1)             0.00 #     0.00 r
+  addr_LIF_reg_3_/Q (DFFTRX1)              0.11       0.11 r
+  U37797/Y (INVXL)                         0.05       0.16 f
+  U58562/Y (NAND2XL)                       0.05       0.21 r
+  U64702/Y (OAI211XL)                      0.09       0.30 f
+  U50828/Y (NOR4BX1)                       0.10       0.39 f
+  U64704/Y (NOR2XL)                        0.06       0.45 r
+  U10837/Y (NOR2BX1)                       0.09       0.54 r
+  U52067/Y (NAND2XL)                       0.08       0.62 f
+  U50167/CO (ADDFXL)                       0.17       0.79 f
+  U50166/CO (ADDFXL)                       0.15       0.95 f
+  U51234/Y (NOR2XL)                        0.06       1.01 r
+  U38876/Y (NAND2XL)                       0.10       1.10 f
+  U52068/Y (NAND2XL)                       0.07       1.18 r
+  U52075/Y (NOR2BXL)                       0.05       1.23 f
+  U50194/Y (NAND2XL)                       0.05       1.28 r
+  U50171/Y (INVXL)                         0.06       1.34 f
+  U50179/Y (INVXL)                         0.07       1.41 r
+  U37645/Y (NOR2XL)                        0.10       1.52 f
+  U55703/Y (AOI22XL)                       0.10       1.61 r
+  U55706/Y (NAND4XL)                       0.14       1.76 f
+  U55712/Y (NOR4XL)                        0.14       1.90 r
+  U55713/Y (NAND4XL)                       0.12       2.02 f
+  U55714/Y (NOR4XL)                        0.10       2.13 r
+  U51018/Y (NAND3BXL)                      0.11       2.23 f
+  U55751/Y (NOR4XL)                        0.09       2.32 r
+  U55758/Y (OAI21XL)                       0.10       2.42 f
+  potential_reg_9_/RN (DFFTRXL)            0.03       2.45 f
+  data arrival time                                   2.45
+
+  clock clk (rise edge)                    2.50       2.50
+  clock network delay (ideal)              0.00       2.50
+  potential_reg_9_/CK (DFFTRXL)            0.00       2.50 r
+  library setup time                      -0.05       2.45
+  data required time                                  2.45
+  -----------------------------------------------------------
+  data required time                                  2.45
+  data arrival time                                  -2.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

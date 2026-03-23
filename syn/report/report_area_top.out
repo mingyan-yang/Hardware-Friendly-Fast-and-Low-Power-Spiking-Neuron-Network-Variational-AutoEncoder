@@ -1,0 +1,107 @@
+Warning: Design 'top' has '6' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : top
+Version: R-2020.09-SP5
+Date   : Wed Nov 19 18:15:43 2025
+****************************************
+
+Library(s) Used:
+
+    slow_vdd1v2 (File: /usr/cadtool/GPDK45/gsclib045_svt_v4.4/gsclib045/db/slow_vdd1v2_basicCells_wl.db)
+
+Number of ports:                         3032
+Number of nets:                         45614
+Number of cells:                        41435
+Number of combinational cells:          28519
+Number of sequential cells:             12855
+Number of macros/black boxes:               0
+Number of buf/inv:                       2865
+Number of references:                      85
+
+Combinational area:              53483.329193
+Buf/Inv area:                     2890.242064
+Noncombinational area:          135267.159018
+Macro/Black Box area:                0.000000
+Net Interconnect area:               0.000000
+
+Total cell area:                188750.488211
+Total area:                     188750.488211
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-    Black-
+                                  Total        Total    national    national     boxes   Design
+--------------------------------  -----------  -------  ----------  -----------  ------  -------------------------------
+top                               188750.4882    100.0  50264.4251  133530.1410  0.0000  top
+B1                                   494.1900      0.3    110.4660     376.8840  0.0000  bottleneck
+B1/clk_gate_counter_reg                6.8400      0.0      1.3680       5.4720  0.0000  SNPS_CLOCK_GATE_HIGH_bottleneck
+C0                                  3819.4561      2.0    121.4100     283.1760  0.0000  spike_adder_controller
+C0/ADDER                            3414.8701      1.8      0.6840      18.4680  0.0000  _56to1_adder
+C0/ADDER/A2_1_1                       97.4700      0.1     42.0660      55.4040  0.0000  _2to1_adder_1st_mydesign_3
+C0/ADDER/A2_1_2                       97.4700      0.1     42.0660      55.4040  0.0000  _2to1_adder_1st_mydesign_2
+C0/ADDER/A2_1_3                       97.4700      0.1     42.0660      55.4040  0.0000  _2to1_adder_1st_mydesign_1
+C0/ADDER/A2_1_4                       97.4700      0.1     42.0660      55.4040  0.0000  _2to1_adder_1st_mydesign_0
+C0/ADDER/A2_2_1                      108.7560      0.1     47.1960      61.5600  0.0000  _2to1_adder_2nd_mydesign_1
+C0/ADDER/A2_2_2                      108.7560      0.1     47.1960      61.5600  0.0000  _2to1_adder_2nd_mydesign_0
+C0/ADDER/A2_3                        120.0420      0.1     52.3260      67.7160  0.0000  _2to1_adder_3rd
+C0/ADDER/A7_1                        333.4500      0.2     68.7420      49.2480  0.0000  _7to1_adder_mydesign_7
+C0/ADDER/A7_1/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_15
+C0/ADDER/A7_1/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_14
+C0/ADDER/A7_1/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_7
+C0/ADDER/A7_1/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_7
+C0/ADDER/A7_1/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_7
+C0/ADDER/A7_2                        333.7920      0.2     69.0840      49.2480  0.0000  _7to1_adder_mydesign_6
+C0/ADDER/A7_2/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_13
+C0/ADDER/A7_2/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_12
+C0/ADDER/A7_2/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_6
+C0/ADDER/A7_2/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_6
+C0/ADDER/A7_2/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_6
+C0/ADDER/A7_3                        333.4500      0.2     68.7420      49.2480  0.0000  _7to1_adder_mydesign_5
+C0/ADDER/A7_3/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_11
+C0/ADDER/A7_3/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_10
+C0/ADDER/A7_3/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_5
+C0/ADDER/A7_3/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_5
+C0/ADDER/A7_3/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_5
+C0/ADDER/A7_4                        333.4500      0.2     68.7420      49.2480  0.0000  _7to1_adder_mydesign_4
+C0/ADDER/A7_4/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_9
+C0/ADDER/A7_4/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_8
+C0/ADDER/A7_4/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_4
+C0/ADDER/A7_4/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_4
+C0/ADDER/A7_4/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_4
+C0/ADDER/A7_5                        333.4500      0.2     68.7420      49.2480  0.0000  _7to1_adder_mydesign_3
+C0/ADDER/A7_5/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_7
+C0/ADDER/A7_5/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_6
+C0/ADDER/A7_5/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_3
+C0/ADDER/A7_5/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_3
+C0/ADDER/A7_5/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_3
+C0/ADDER/A7_6                        333.4500      0.2     68.7420      49.2480  0.0000  _7to1_adder_mydesign_2
+C0/ADDER/A7_6/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_5
+C0/ADDER/A7_6/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_4
+C0/ADDER/A7_6/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_2
+C0/ADDER/A7_6/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_2
+C0/ADDER/A7_6/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_2
+C0/ADDER/A7_7                        333.7920      0.2     69.0840      49.2480  0.0000  _7to1_adder_mydesign_1
+C0/ADDER/A7_7/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_3
+C0/ADDER/A7_7/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_2
+C0/ADDER/A7_7/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_1
+C0/ADDER/A7_7/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_1
+C0/ADDER/A7_7/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_1
+C0/ADDER/A7_8                        333.4500      0.2     68.7420      49.2480  0.0000  _7to1_adder_mydesign_0
+C0/ADDER/A7_8/CSA1                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_1
+C0/ADDER/A7_8/CSA2                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W8_mydesign_0
+C0/ADDER/A7_8/CSA3                    41.0400      0.0     41.0400       0.0000  0.0000  csa_W9_mydesign_0
+C0/ADDER/A7_8/CSA4                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W10_mydesign_0
+C0/ADDER/A7_8/CSA5                    46.1700      0.0     46.1700       0.0000  0.0000  csa_W11_mydesign_0
+F1                                    62.5860      0.0     36.9360      25.6500  0.0000  FSM
+L1                                   579.6900      0.3    358.7580     220.9320  0.0000  LIF
+--------------------------------  -----------  -------  ----------  -----------  ------  -------------------------------
+Total                                                   53483.3292  135267.1590  0.0000
+
+1

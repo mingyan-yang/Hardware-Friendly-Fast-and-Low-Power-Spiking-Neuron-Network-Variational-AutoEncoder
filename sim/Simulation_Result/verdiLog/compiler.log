@@ -1,0 +1,52 @@
+*design* DebussyLib (btIdent Verdi_T-2022.06)
+Command arguments:
+    +define+verilog
+    -f ../sim_rtl.f
+        ../source/header.v
+        testbench.v
+        ../source/sram1000x4b.v
+        ../source/sram78400x4b.v
+        ../source/sram884x4b.v
+        ../source/_56to1_adder.v
+        ../source/bottleneck.v
+        ../source/spike_adder_controller.v
+        ../source/SPOILER_LIF.v
+        ../source/FSM.v
+        ../source/top.v
+
+
+*Error* failed to open source file "../source/header.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "testbench.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/sram1000x4b.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/sram78400x4b.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/sram884x4b.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/_56to1_adder.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/bottleneck.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/spike_adder_controller.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/SPOILER_LIF.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/FSM.v" with read access: No such file or directory
+
+
+*Error* failed to open source file "../source/top.v" with read access: No such file or directory
+
+Highest level modules:
+
+Total	11 error(s),   0 warning(s)

@@ -1,0 +1,15 @@
+../source/header.v
+testbench.v
+../source/enc1_rom.v
+../source/enc2_rom.v
+../source/enc_bias_rom.v
+../source/dec1_rom.v
+../source/dec2_rom.v
+../source/dec_bias_rom.v
+../source/_56to1_adder.v
+../source/bottleneck.v
+../source/spike_adder_controller.v
+../source/SPOILER_LIF.v
+../source/FSM.v
+../source/top.v
+../source/Wctrl.v

@@ -1,0 +1,94 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1536 313 100 239
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/u111/u111061243/SNN/project/sim/Simulation_Result/test.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 143931.800000 143995.800000
+cursor 143965.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 4
+; marker line index
+markerPos 7
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/u111/u111061243/SNN/project/sim/Simulation_Result/test.fsdb"
+addSignal -h 15 /testbench/top/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope done_adder
+addSignal -h 15 -holdScope done_LIF
+addSignal -h 15 -holdScope open
+addSignal -h 15 -holdScope last_neuron
+addSignal -h 15 -UNSIGNED -BIN /testbench/top/C0/spike[55:0]
+addSignal -h 15 -UNSIGNED -BIN /testbench/top/spike_mem[99:0]
+addSignal -h 15 -2COMP -UDEC -holdScope adder_out[10:0]
+addSignal -h 15 -2COMP -UDEC /testbench/top/L1/bias[3:0]
+addSignal -h 15 -UNSIGNED -UDEC /testbench/top/addr_LIF_r[9:0]
+addSignal -h 15 -2COMP -UDEC -holdScope potential[11:0]
+addSignal -h 15 -2COMP -UDEC -holdScope potential_out[11:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope addr[10:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope addr_LIF[9:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope state[1:0]
+addSignal -h 15 -holdScope step
+addSignal -h 15 -UNSIGNED -HEX -holdScope FSM_state[2:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope encoder_out[119:0]
+addSignal -h 15 -UNSIGNED -UDEC /testbench/t1[31:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/u111/u111061243/SNN/project/sim/Simulation_Result/test.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testbench"
+"/testbench/top"
+"/testbench/top/L1"
+
+SCOPE_LIST_BEGIN
+"/testbench"
+"/testbench/top"
+"/testbench/top/L1"
+"/testbench/top/F1"
+"/testbench/top/B1"
+"/testbench/top/C0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

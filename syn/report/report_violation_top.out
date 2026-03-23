@@ -1,0 +1,21 @@
+Warning: Design 'top' has '6' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: R-2020.09-SP5
+Date   : Wed Nov 19 18:15:52 2025
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00       188750.48      -188750.48
+                                                                    (VIOLATED)
+
+
+1
